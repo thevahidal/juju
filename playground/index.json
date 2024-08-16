@@ -1,0 +1,64 @@
+// bonyad.ir/home?portal=tehran
+{
+  "widgets": [
+    {
+      "type": "slider",
+      "title": "",
+      "data": [
+        {
+          "image": "https://bonyad.ir/images/slider/1.jpg",
+          "title": "",
+          "link": ""
+        },
+        {
+          "image": "https://bonyad.ir/images/slider/2.jpg",
+          "title": "",
+          "link": ""
+        },
+        {
+          "image": "https://bonyad.ir/images/slider/3.jpg",
+          "title": "",
+          "link": ""
+        }
+      ],
+      "data_schema": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "image": {
+              "type": "string"
+            },
+            "title": {
+              "type": "string"
+            },
+            "link": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    {
+
+"type": "grid-tabbed-posts",
+      "title": "",
+      "data": {
+        "tabs": [
+          {
+            "title": "آخرین اخبار",
+            "categories": ["news", "politics"],
+            "count": 5
+            // api.bonyad.ir/posts?categories=news,politics&count=5
+          },
+          {
+            "title": "آخرین اخبار",
+            "categories": ["news", "politics"],
+            "count": 5
+          }
+        ]
+      }
+    }
+  ]
+
+}
